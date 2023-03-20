@@ -1,4 +1,5 @@
 const main = async () => {
+    console.log("process.env.QUICKNODE_API_KEY_URL: {}", process.env.QUICKNODE_API_KEY_URL)
     const nftContractFactory = await hre.ethers.getContractFactory("MyNFT");
     const nftContract = await nftContractFactory.deploy();
     await nftContract.deployed();
